@@ -7,6 +7,7 @@ namespace DomainService
     {
         public bool IsLoyal(List<UserDailyActivity> dailyActivity)
         {
+            // 用戶造訪日期不足 3 天就不符合標準
             if (dailyActivity.Count() < 3)
                 return false;
 
