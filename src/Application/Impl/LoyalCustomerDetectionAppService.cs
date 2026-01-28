@@ -1,10 +1,11 @@
+using Application.Interface;
 using DomainModel.Interface;
 using DomainModel.Model;
 using DomainService.Interface;
 
 namespace Application.Impl
 {
-    public class LoyalCustomerDetectionAppService
+    public class LoyalCustomerDetectionAppService : ILoyalCustomerDetectionAppService
     {
         private readonly ILogRepository _logRepository;
         private readonly ILoyalCheckDomainService _loyalCheckDomainService;
