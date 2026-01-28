@@ -17,11 +17,11 @@ namespace DomainService
             for (int i = 0; i < sort.Count - 2; i++)
             {
                 var day1 = sort[i];
-                var day2 = sort.FirstOrDefault(x => x.Date == day1.Date.AddDays(1));
-                var day3 = sort.FirstOrDefault(x => x.Date == day1.Date.AddDays(2));
+                var day2 = sort[i + 1];
+                var day3 = sort[i + 2];
 
                 // 用戶連續使用 3 天，並且造訪不同頁面超過 4 個，就符合標準
-                if (day2 != null && day3 != null)
+                if (day2.Date == day1.Date.AddDays(1) && day3.Date == day1.Date.AddDays(2))
                 {
                     var totalPages = new HashSet<string>(day1.VisitedPages);
                     totalPages.UnionWith(day2.VisitedPages);
