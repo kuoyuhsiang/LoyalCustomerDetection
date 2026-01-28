@@ -5,6 +5,9 @@ namespace Infrastructure.Core.Data
 {
     public class LogRepository : ILogRepository
     {
+        // 用 IEnumerable 原因 (搭配 yield return): 
+        // 1. 假設 .txt 檔案非常大包，用 List 整包灌進記憶體可能會爆掉，那我逐筆讀取比較安全，記憶體當下只處裡一行就好
+        // 2. 預期不用對資料修改刪除，所以唯讀就好
         public IEnumerable<LogEntry> ReadLogs(string sourcePath)
         {
             if (!File.Exists(sourcePath))
