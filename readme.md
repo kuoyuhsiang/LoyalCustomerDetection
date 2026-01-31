@@ -70,3 +70,8 @@ dotnet build
 ```bash
 dotnet test
 ```
+
+### 執行專案(已提供簡易.txt)
+```bash
+dotnet run
+```

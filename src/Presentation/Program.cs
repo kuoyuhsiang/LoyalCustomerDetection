@@ -17,7 +17,7 @@ var serviceProvider = services.BuildServiceProvider();
 var appService = serviceProvider.GetRequiredService<ILoyalCustomerDetectionAppService>();
 
 //我假設有一份 .txt 檔案放在虛構的 AppData 資料夾
-var filePath = Path.Combine(Directory.GetCurrentDirectory(), "AppData/txt/xxxxxxxx.txt");
+var filePath = Path.Combine(Directory.GetCurrentDirectory(), "AppData/test.txt");
 
 try
 {

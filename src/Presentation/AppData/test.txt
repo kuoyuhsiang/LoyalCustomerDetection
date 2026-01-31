@@ -1,0 +1,15 @@
+2025-05-21T08:00:00.000000+00:00 home eve@gmail.com
+2025-05-21T09:00:00.000000+00:00 products eve@gmail.com
+2025-05-22T08:00:00.000000+00:00 cart eve@gmail.com
+2025-05-22T10:00:00.000000+00:00 products eve@gmail.com
+2025-05-23T08:00:00.000000+00:00 checkout eve@gmail.com
+2025-05-23T09:00:00.000000+00:00 success eve@gmail.com
+2025-05-21T10:00:00.000000+00:00 login frank@gmail.com
+2025-05-21T11:00:00.000000+00:00 home frank@gmail.com
+2025-05-22T10:00:00.000000+00:00 login frank@gmail.com
+2025-05-22T11:00:00.000000+00:00 search frank@gmail.com
+2025-05-23T10:00:00.000000+00:00 login frank@gmail.com
+2025-05-23T11:00:00.000000+00:00 profile frank@gmail.com
+2025-05-24T12:00:00.000000+00:00 logout eve@gmail.com
+2025-05-25T08:00:00.000000+00:00 home grace@gmail.com
+2025-05-26T08:00:00.000000+00:00 home grace@gmail.com
